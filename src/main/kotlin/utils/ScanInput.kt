@@ -23,4 +23,15 @@ object ScanInput {
             }
         } while (true)
     }
+
+    fun readNextDouble(prompt: String?): Double {
+        do{
+            try {
+                print(prompt)
+                return Scanner(System.`in`).next().toDouble()
+            } catch (e: NumberFormatException) {
+                System.err.println("\tEnter a number please!")
+            }
+        } while (true)
+    }
 }
