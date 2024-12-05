@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="" />
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added a basic function to read an int taken from the user. If data isnt an int the user is prompted again">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/ScanInput.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/ScanInput.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +21,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Jakepower2001"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Jakepower2001/game-app-assignment.git",
+    "accountId": "88ef1a24-5352-4209-84ce-8116428247d7"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -37,7 +57,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "model1-utils",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,11 +83,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733413974500</updated>
-      <workItem from="1733413975550" duration="934000" />
+      <workItem from="1733413975550" duration="5681000" />
     </task>
+    <task id="LOCAL-00001" summary="Restarted project - initial commit, setting up Game and savefile class">
+      <option name="closed" value="true" />
+      <created>1733415097145</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733415097145</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added my utilities and input scanner folder">
+      <option name="closed" value="true" />
+      <created>1733420832601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733420832601</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added a basic function to read an int taken from the user. If data isnt an int the user is prompted again">
+      <option name="closed" value="true" />
+      <created>1733421599193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733421599193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Restarted project - initial commit, setting up Game and savefile class" />
+    <MESSAGE value="Added my utilities and input scanner folder" />
+    <MESSAGE value="added a basic function to read an int taken from the user. If data isnt an int the user is prompted again" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a basic function to read an int taken from the user. If data isnt an int the user is prompted again" />
   </component>
 </project>
