@@ -11,13 +11,12 @@ import java.util.Scanner
 object ScanInput {
 
 
-
     @JvmStatic
     fun readNextInt(prompt: String?): Int {
         do {
             try {
                 print(prompt)
-                return Scanner(System. `in`).next().toInt()
+                return Scanner(System.`in`).next().toInt()
             } catch (e: NumberFormatException) {
                 System.err.println("\tEnter a number please.e")
             }
@@ -25,7 +24,7 @@ object ScanInput {
     }
 
     fun readNextDouble(prompt: String?): Double {
-        do{
+        do {
             try {
                 print(prompt)
                 return Scanner(System.`in`).next().toDouble()
@@ -39,5 +38,12 @@ object ScanInput {
     fun readNextLine(prompt: String?): String {
         print(prompt)
         return Scanner(System.`in`).nextLine()
+    }
+
+
+    @JvmStatic
+    fun readNextChar(prompt: String?): Char {
+        print(prompt)
+        return Scanner(System.`in`).next()[0]
     }
 }
