@@ -21,4 +21,6 @@ class GameAPI(serializerType: Serializer) {
         game.gameId = getId()
         return games.add(game)
     }
+
+    fun delete(id: Int) = games.removeIf { game -> game.gameId == id }
 }
