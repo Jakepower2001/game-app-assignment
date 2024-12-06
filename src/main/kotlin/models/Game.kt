@@ -16,5 +16,25 @@ data class Game(
         return saves.add(save)
     }
 
+    fun amountOfSaves() = saves.size
+
+    fun findOne(id: Int): Savefile?{
+        return saves.find { savefile -> savefile.saveId == id  }
+    }
+
+    fun delete(id: Int): Boolean{
+        return saves.removeIf { savefile -> savefile.saveId == id }
+    }
+
+    fun update( id: Int, newSavefile: Savefile) : Boolean{
+        val foundSavefile = findOne(id)
+
+        if (foundSavefile != null) {
+            foundSavefile.saveContents = newSavefile.saveContents
+            foundSavefile.isSaveComplete = newSavefile.isSaveComplete
+            return true
+        }
+        return false
+    }
 
 }
