@@ -3,11 +3,11 @@
  * @author:  sdrohan - skeleton code from tutors
  */
 
-package ie.setu.controllers
+package controllers
 
 import ie.setu.models.Game
 import persistence.Serializer
-import ie.setu.utils.Utilities.formatListString
+import utils.Utilities.formatListString
 import java.util.ArrayList
 
 class GameAPI(serializerType: Serializer) {

@@ -1,4 +1,4 @@
-package ie.setu.utils
+package utils
 
 import ie.setu.models.Game
 import ie.setu.models.Savefile
