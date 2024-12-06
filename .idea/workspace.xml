@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added the main menu code for taking an input">
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added the persistence folder with the JSON serializer class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/persistence/JSONSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/persistence/JSONSerializer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <updated>1733413974500</updated>
       <workItem from="1733413975550" duration="934000" />
       <workItem from="1733453374042" duration="409000" />
-      <workItem from="1733488111153" duration="4603000" />
+      <workItem from="1733488111153" duration="5594000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -120,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733491331031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added the persistence folder with the JSON serializer class">
+      <option name="closed" value="true" />
+      <created>1733492922979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733492922979</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +151,7 @@
     <MESSAGE value="added a delete game function to the game apps api" />
     <MESSAGE value="this is as far as i can bring the api until i fully implement my serializer, update game function partially added" />
     <MESSAGE value="added the main menu code for taking an input" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the main menu code for taking an input" />
+    <MESSAGE value="added the persistence folder with the JSON serializer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the persistence folder with the JSON serializer class" />
   </component>
 </project>
