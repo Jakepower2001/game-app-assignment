@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added the persistence folder with the JSON serializer class">
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="this will hopefully write in a serialized game and it's objects to a JSON file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/persistence/JSONSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/persistence/JSONSerializer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="serialization-implementation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +58,7 @@
     "Gradle.Build game-app-assignment.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "serialization-implementation",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -87,7 +86,7 @@
       <updated>1733413974500</updated>
       <workItem from="1733413975550" duration="934000" />
       <workItem from="1733453374042" duration="409000" />
-      <workItem from="1733488111153" duration="5594000" />
+      <workItem from="1733488111153" duration="7335000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -129,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733492922979</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="this will hopefully read in a serialized game and objects from a JSON file">
+      <option name="closed" value="true" />
+      <created>1733493802319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733493802319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="this will hopefully write in a serialized game and it's objects to a JSON file">
+      <option name="closed" value="true" />
+      <created>1733495144009</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733495144009</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +167,8 @@
     <MESSAGE value="this is as far as i can bring the api until i fully implement my serializer, update game function partially added" />
     <MESSAGE value="added the main menu code for taking an input" />
     <MESSAGE value="added the persistence folder with the JSON serializer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the persistence folder with the JSON serializer class" />
+    <MESSAGE value="this will hopefully read in a serialized game and objects from a JSON file" />
+    <MESSAGE value="this will hopefully write in a serialized game and it's objects to a JSON file" />
+    <option name="LAST_COMMIT_MESSAGE" value="this will hopefully write in a serialized game and it's objects to a JSON file" />
   </component>
 </project>
