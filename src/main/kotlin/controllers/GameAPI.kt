@@ -5,10 +5,24 @@
 
 package ie.setu.controllers
 
-import models.Game
-//import persistence.Serializer
-import utils.Utilities.formatListString
+import ie.setu.models.Game
+import persistence.Serializer
+import ie.setu.utils.Utilities.formatListString
 import java.util.ArrayList
 
-class GameAPI {
+class GameAPI(serializerType: Serializer) {
+    private var serializer: Serializer = serializerType
+    private var games = ArrayList<Game>()
+
+    private var lastId = 0
+    private fun getId() = lastId++
+
+    fun add(game: Game): Boolean {
+        game.gameId = getId()
+        return games.add(game)
+    }
+
+    fun delete(id: Int) = games.removeIf { game -> game.gameId == id }
+
+
 }
