@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="tidied up game api file, added game amount / game find methods">
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="First working build, user can add, delete, update and list games now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/GameAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/GameAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Game.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/persistence/JSONSerializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/persistence/JSONSerializer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="adding-first-few-functions-to-menu" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +61,7 @@
     "Gradle.Build game-app-assignment.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "adding-first-few-functions-to-menu",
+    "git-widget-placeholder": "adding-delete-functionality-to-menu",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -96,7 +92,9 @@
       <workItem from="1733488111153" duration="7335000" />
       <workItem from="1733495932522" duration="70000" />
       <workItem from="1733525167611" duration="6827000" />
-      <workItem from="1733544098017" duration="10774000" />
+      <workItem from="1733544098017" duration="11419000" />
+      <workItem from="1733556285477" duration="208000" />
+      <workItem from="1733612193008" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -226,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733552198959</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="First working build, user can add, delete, update and list games now">
+      <option name="closed" value="true" />
+      <created>1733555432878</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1733555432878</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +278,7 @@
     <MESSAGE value="designed basic menu interface and rendering functionality" />
     <MESSAGE value="add function added" />
     <MESSAGE value="tidied up game api file, added game amount / game find methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="tidied up game api file, added game amount / game find methods" />
+    <MESSAGE value="First working build, user can add, delete, update and list games now" />
+    <option name="LAST_COMMIT_MESSAGE" value="First working build, user can add, delete, update and list games now" />
   </component>
 </project>

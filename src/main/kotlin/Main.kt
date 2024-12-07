@@ -22,8 +22,8 @@ fun startMenu() {
             1 -> addGame()
             2 -> listGames()
             3 -> updateGame()
-          //  4 -> //deleteGame()
-           // 0 -> //exitApp()
+            4 -> deleteGame()
+            0 -> exitApp()
             else -> println("Invalid choice given, try again!: $option")
         }
     } while (true)
@@ -110,15 +110,34 @@ fun updateGame() {
             val gameCategory = readNextLine("Enter your games category: ")
 
             if (gameAPI.update(id, Game(0, gameName, gameRating, gameCategory, isGameSaved = false))) {
+                println("Update Successful!!")
+            } else {
+                println("Update wasn't successfully completed!")
             }
-            println("Update Successful!!")
         } else {
-            println("Update wasn't successfully completed!")
+            println("This index has no associated game entries.....")
         }
-    } else {
-        println("This index has no associated game entries.....")
     }
 }
+
+
+fun deleteGame() {
+    listGames()
+    if (gameAPI.gamesAmount() > 0) {
+        val id = readNextInt("Enter a games id to delete that game: ")
+        val gameToBeDeleted = gameAPI.delete(id)
+        if (gameToBeDeleted) {
+            println("Your Delete Request was successful!!")
+        }
+    }
+}
+
+
+fun exitApp() {
+    println("See you next time!!")
+    exitProcess(0)
+}
+
 
 
 
