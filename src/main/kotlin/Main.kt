@@ -74,4 +74,26 @@ fun addGame() {
         println("Failed to add game :(")
     }
 }
+fun listGames() {
+    if (gameAPI.gamesAmount() > 0) {
+        val option = readNextInt(
+            """"
+                > |----------------------------|
+                > | 1) View all games          |
+                > | 2) View saved games        |
+                > |----------------------------|
+        > ==>> """.trimMargin(">")
+        )
+        when (option) {
+            1 -> listEveryGame()
+            //2 -> listSavedGames()
+            else -> println("Invalid choice given, try again!: $option")
+        }
+    } else {
+        println("Game is empty!")
+    }
+}
+fun listEveryGame() = println(gameAPI.listEveryGame())
+
+
 

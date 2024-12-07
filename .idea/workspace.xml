@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="designed basic menu interface and rendering functionality">
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="add function added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Savefile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Savefile.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/GameAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/GameAPI.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <workItem from="1733488111153" duration="7335000" />
       <workItem from="1733495932522" duration="70000" />
       <workItem from="1733525167611" duration="6827000" />
-      <workItem from="1733544098017" duration="4060000" />
+      <workItem from="1733544098017" duration="7814000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -207,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733547104497</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add function added">
+      <option name="closed" value="true" />
+      <created>1733548398728</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733548398728</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +259,7 @@
     <MESSAGE value="added imports for my serializer, other commented out inputs have no use yet" />
     <MESSAGE value="added a json file for the serializer to read games and saves from and to write games and saves to" />
     <MESSAGE value="designed basic menu interface and rendering functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="designed basic menu interface and rendering functionality" />
+    <MESSAGE value="add function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function added" />
   </component>
 </project>
