@@ -1,4 +1,4 @@
-package ie.setu.models
+package models
 
 data class Savefile( var saveId: Int = 0, var saveContents: String, var isSaveComplete: Boolean = false){
     override fun toString() =

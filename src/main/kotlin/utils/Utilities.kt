@@ -1,7 +1,7 @@
 package utils
 
-import ie.setu.models.Game
-import ie.setu.models.Savefile
+import models.Game
+import models.Savefile
 
 object Utilities {
 
