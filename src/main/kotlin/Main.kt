@@ -1,8 +1,8 @@
 
 import controllers.GameAPI
-import ie.setu.models.Game
-import ie.setu.models.Savefile
-//import org.fusesource.jansi.Ansi.ansi
+import models.Game
+import models.Savefile
+import org.fusesource.jansi.Ansi.ansi
 import persistence.JSONSerializer
 import java.io.File
 import kotlin.system.exitProcess
@@ -22,8 +22,8 @@ fun startMenu() {
             1 -> addGame()
             2 -> listGames()
             3 -> updateGame()
-            4 -> deleteGame()
-            0 -> exitApp()
+          //  4 -> //deleteGame()
+           // 0 -> //exitApp()
             else -> println("Invalid choice given, try again!: $option")
         }
     } while (true)
@@ -74,6 +74,8 @@ fun addGame() {
         println("Failed to add game :(")
     }
 }
+
+
 fun listGames() {
     if (gameAPI.gamesAmount() > 0) {
         val option = readNextInt(
@@ -94,6 +96,30 @@ fun listGames() {
     }
 }
 fun listEveryGame() = println(gameAPI.listEveryGame())
+
+fun listSavedGames() = println(gameAPI.listSavedGames())
+
+fun updateGame() {
+    listGames()
+    if (gameAPI.gamesAmount() > 0) {
+        //user is only asked to choose the game if said game exists
+        val id = readNextInt("Enter your games id to update: ")
+        if (gameAPI.gameFind(id) != null) {
+            val gameName = readNextLine("Enter your games name: ")
+            val gameRating = readNextInt("Enter your games rating (1,2,3,4,5): ")
+            val gameCategory = readNextLine("Enter your games category: ")
+
+            if (gameAPI.update(id, Game(0, gameName, gameRating, gameCategory, isGameSaved = false))) {
+            }
+            println("Update Successful!!")
+        } else {
+            println("Update wasn't successfully completed!")
+        }
+    } else {
+        println("This index has no associated game entries.....")
+    }
+}
+
 
 
 

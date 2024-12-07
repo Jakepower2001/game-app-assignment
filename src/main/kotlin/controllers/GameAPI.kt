@@ -5,7 +5,7 @@
 
 package controllers
 
-import ie.setu.models.Game
+import models.Game
 import persistence.Serializer
 import utils.Utilities.formatListString
 import java.sql.RowId

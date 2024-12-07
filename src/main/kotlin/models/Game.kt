@@ -1,4 +1,4 @@
-package ie.setu.models
+package models
 
 import utils.Utilities
 

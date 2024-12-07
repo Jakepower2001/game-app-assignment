@@ -2,8 +2,8 @@ package persistence
 
 import com.thoughtworks.xstream.XStream
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver
-import ie.setu.models.Game
-import ie.setu.models.Savefile
+import models.Game
+import models.Savefile
 import java.io.File
 import java.io.FileReader
 import java.io.FileWriter
