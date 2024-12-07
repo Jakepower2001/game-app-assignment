@@ -61,3 +61,17 @@ fun mainMenu(): Int {
     )
 
 }
+
+fun addGame() {
+    val gameName = readNextLine("Enter the name of your game!:")
+    val gameRating = readNextInt("Give the game a rating!(1,2,3,4,5):")
+    val gameCategory = readNextLine("Enter your games category: ")
+    val isAdded = gameAPI.add(Game(gameName = gameName, gameRating = gameRating, gameCategory = gameCategory))
+
+    if (isAdded) {
+        println("Game has been successfully added! :)")
+    } else {
+        println("Failed to add game :(")
+    }
+}
+
