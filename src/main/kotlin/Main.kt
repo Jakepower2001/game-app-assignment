@@ -1,9 +1,17 @@
-//package ie.setu
 
 import controllers.GameAPI
-import models.Game
-import models.Savefile
-}
+import ie.setu.models.Game
+import ie.setu.models.Savefile
+//import org.fusesource.jansi.Ansi.ansi
+import persistence.JSONSerializer
+import java.io.File
+import kotlin.system.exitProcess
+//import utils.ScanInput.readNextChar
+//import utils.ScanInput.readNextInt
+//import utils.ScanInput.readNextLine
+
+private val gameAPI = GameAPI(JSONSerializer(File("Games.json")))
+
 
 
 fun main() = startMenu()
