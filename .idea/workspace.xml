@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added imports for my serializer, other commented out inputs have no use yet">
-      <change afterPath="$PROJECT_DIR$/Games.json" afterDir="false" />
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added a json file for the serializer to read games and saves from and to write games and saves to">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/ScanInput.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/ScanInput.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
     "Gradle.Build game-app-assignment.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Menu-interface",
+    "git-widget-placeholder": "Update/delete-methods",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -91,7 +92,8 @@
       <workItem from="1733453374042" duration="409000" />
       <workItem from="1733488111153" duration="7335000" />
       <workItem from="1733495932522" duration="70000" />
-      <workItem from="1733525167611" duration="6325000" />
+      <workItem from="1733525167611" duration="6827000" />
+      <workItem from="1733544098017" duration="2659000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -189,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733530499372</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added a json file for the serializer to read games and saves from and to write games and saves to">
+      <option name="closed" value="true" />
+      <created>1733531668145</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733531668145</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +241,7 @@
     <MESSAGE value="implemented calls for the update and delete methods" />
     <MESSAGE value="list saves will return a saved game and its details like genre, rating etc" />
     <MESSAGE value="added imports for my serializer, other commented out inputs have no use yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="added imports for my serializer, other commented out inputs have no use yet" />
+    <MESSAGE value="added a json file for the serializer to read games and saves from and to write games and saves to" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a json file for the serializer to read games and saves from and to write games and saves to" />
   </component>
 </project>

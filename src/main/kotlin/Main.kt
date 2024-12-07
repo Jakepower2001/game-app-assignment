@@ -6,9 +6,9 @@ import ie.setu.models.Savefile
 import persistence.JSONSerializer
 import java.io.File
 import kotlin.system.exitProcess
-//import utils.ScanInput.readNextChar
-//import utils.ScanInput.readNextInt
-//import utils.ScanInput.readNextLine
+import utils.ScanInput.readNextChar
+import utils.ScanInput.readNextInt
+import utils.ScanInput.readNextLine
 
 private val gameAPI = GameAPI(JSONSerializer(File("Games.json")))
 
@@ -27,4 +27,37 @@ fun startMenu() {
             else -> println("Invalid choice given, try again!: $option")
         }
     } while (true)
+}
+
+
+fun mainMenu(): Int {
+    return readNextInt(
+        ansi().render(
+            """
+        > |------------------------------------------------------------|
+        > |                     Game tracker app                       |
+        > |------------------------------------------------------------|
+        > | Game Menu                                                  |
+        > | 1) Add a game                                              |
+        > | 2) List games                                              |
+        > | 3) Update a game                                           |
+        > | 4) Delete a game                                           |
+        > | 5) Don't forget to save your game!                         |
+        > |------------------------------------------------------------|
+        > | Save progress menu                                         |
+        > | 6) Add a save to your game                                 |
+        > | 7) Update your save file                                   |
+        > | 8) Delete your save file                                   |
+        > | 9) Mark game as saved/yet to be saved                      |
+        > |------------------------------------------------------------|
+        > | 0) Exit app                                                |
+        > |                                                            |
+        > |                                                            |
+        > |                                                            |
+        > |                                                            |
+        > |------------------------------------------------------------|
+        > ==>> """.trimMargin(">")
+        ).toString()
+    )
+
 }
