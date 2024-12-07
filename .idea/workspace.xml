@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="implemented calls for the update and delete methods">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Game.kt" afterDir="false" />
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added imports for my serializer, other commented out inputs have no use yet">
+      <change afterPath="$PROJECT_DIR$/Games.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
     "Gradle.Build game-app-assignment.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "listSaves-funtions",
+    "git-widget-placeholder": "Menu-interface",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -90,7 +91,7 @@
       <workItem from="1733453374042" duration="409000" />
       <workItem from="1733488111153" duration="7335000" />
       <workItem from="1733495932522" duration="70000" />
-      <workItem from="1733525167611" duration="3441000" />
+      <workItem from="1733525167611" duration="6325000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -172,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733528299742</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="list saves will return a saved game and its details like genre, rating etc">
+      <option name="closed" value="true" />
+      <created>1733528892287</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733528892287</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added imports for my serializer, other commented out inputs have no use yet">
+      <option name="closed" value="true" />
+      <created>1733530499372</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733530499372</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +229,8 @@
     <MESSAGE value="Serialization progress merged" />
     <MESSAGE value="Serialization interface added" />
     <MESSAGE value="implemented calls for the update and delete methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented calls for the update and delete methods" />
+    <MESSAGE value="list saves will return a saved game and its details like genre, rating etc" />
+    <MESSAGE value="added imports for my serializer, other commented out inputs have no use yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="added imports for my serializer, other commented out inputs have no use yet" />
   </component>
 </project>
