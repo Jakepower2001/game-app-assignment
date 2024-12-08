@@ -40,6 +40,16 @@ class GameAPI(serializerType: Serializer) {
         }
         return false
     }
+    //saving methods for games
+    fun saveGame(id: Int): Boolean {
+        val gameFound = gameFind(id)
+        if ((gameFound != null) && (!gameFound.isGameSaved)
+        ) {
+            gameFound.isGameSaved = true
+            return true
+        }
+        return false
+    }
 
     // Listing methods for games array
 
@@ -58,7 +68,7 @@ class GameAPI(serializerType: Serializer) {
 
     fun gamesAmount() = games.size
 
-    private fun AmountOfsavedGames(): Int= games.count { game: Game -> game.isGameSaved }
+    private fun savedGamesCount(): Int= games.count { game: Game -> game.isGameSaved }
 
 
     fun amountOfGameSaves(): Int = games.count { game: Game -> !game.isGameSaved  }

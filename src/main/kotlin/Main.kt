@@ -156,7 +156,8 @@ fun exitApp() {
 
 fun saveGame() {
     listSavedGames()
-    if (gameAPI.save() > 0) {}
+    if (gameAPI.amountOfGameSaves() > 0) {}
+    val id = readNextInt("Enter the Id of the game you want to save your progress on!!")
 }
 
 

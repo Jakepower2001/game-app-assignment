@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added some temporarily commented out functions for my save segment of the menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e6e91582-d97c-42e0-ad59-7072706e47d5" name="Changes" comment="added 2 new functions, one that counts the number of saved games and one that counts the amount of game saves">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/GameAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/GameAPI.kt" afterDir="false" />
     </list>
@@ -96,7 +95,7 @@
       <workItem from="1733544098017" duration="11419000" />
       <workItem from="1733556285477" duration="208000" />
       <workItem from="1733612193008" duration="2120000" />
-      <workItem from="1733687326858" duration="2640000" />
+      <workItem from="1733687326858" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="added an add game function to the game apps api">
       <option name="closed" value="true" />
@@ -250,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733688565776</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added 2 new functions, one that counts the number of saved games and one that counts the amount of game saves">
+      <option name="closed" value="true" />
+      <created>1733690053697</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1733690053697</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +269,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -299,6 +311,7 @@
     <MESSAGE value="First working build, user can add, delete, update and list games now" />
     <MESSAGE value="Added delete game function to main, menu can call method now, also implemented basic exit app function to close running build" />
     <MESSAGE value="added some temporarily commented out functions for my save segment of the menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some temporarily commented out functions for my save segment of the menu" />
+    <MESSAGE value="added 2 new functions, one that counts the number of saved games and one that counts the amount of game saves" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 2 new functions, one that counts the number of saved games and one that counts the amount of game saves" />
   </component>
 </project>
