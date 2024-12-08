@@ -58,7 +58,9 @@ class GameAPI(serializerType: Serializer) {
 
     fun gamesAmount() = games.size
 
-    private fun savedGamesCount(): Int= games.count { game: Game -> game.isGameSaved }
+    private fun AmountOfsavedGames(): Int= games.count { game: Game -> game.isGameSaved }
 
+
+    fun amountOfGameSaves(): Int = games.count { game: Game -> !game.isGameSaved  }
 }
 
