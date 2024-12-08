@@ -23,6 +23,11 @@ fun startMenu() {
             2 -> listGames()
             3 -> updateGame()
             4 -> deleteGame()
+            //5 -> saveGame()
+            //6 -> updateGameSave
+            //7 -> deleteASave
+            //8 -> save()
+            //7 -> load()
             0 -> exitApp()
             else -> println("Invalid choice given, try again!: $option")
         }
