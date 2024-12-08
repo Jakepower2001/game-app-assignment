@@ -21,7 +21,9 @@ object Utilities {
         return sbd.toString().trim()
     }
 
-
+    /**
+     * returns a formatted string of a set of play objects
+     */
     @JvmStatic
     fun formatSetString(savesToFormat: Set<Savefile>): String =
         savesToFormat
