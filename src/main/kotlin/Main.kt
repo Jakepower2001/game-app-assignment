@@ -239,12 +239,12 @@ private fun askUserToSelectSavefile(game: Game): Savefile? {
         print(game.listSaves())
         game.findOne(readNextInt("\n Enter the save files id:"))
     } else {
-        println("this game hasnt any saves yet")
+        println("this game hasn't any saves yet")
         null
     }
 }
 
-fun save() {
+/*fun save() {
     try {
         gameAPI.store()
     } catch (e: Exception) {
@@ -257,4 +257,4 @@ fun load() = try {
     println("File gather worked, games and savefiles have been added to system")
 } catch (e: Exception) {
     system.err.println("Error reading from file")
-}
+}*/
