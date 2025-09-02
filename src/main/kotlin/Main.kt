@@ -35,10 +35,10 @@ fun startMenu() {
             3 -> updateGame()
             4 -> deleteGame()
             5 -> saveGame()
-            6 -> updateSaveFileInGame()
-            7 -> deleteSaveFile()
-            //8 -> save()
-            //7 -> load()
+            6 -> addSaveToGame()
+            7 -> updateSaveFileInGame()
+             8-> deleteSaveFile()
+            9 -> markGameAsSavedOrNot()
             0 -> exitApp()
             else -> println("Invalid choice given, try again!: $option")
         }
@@ -190,27 +190,44 @@ fun deleteSaveFile() {
             if (isDeleted) {
                 println("Save has been deleted!")
             } else {
-                println("the delete didnt work...")
+                println("The delete didn't work...")
             }
+        } else {
+            println("No savefile selected or savefile doesn't exist.")
         }
+    } else {
+        println("No game selected or game doesn't exist.")
     }
 }
 
+/**
+ * Updates the savefiles contents for a selected game
+ *
+ * This function will ask the user the select a game, then a save file within the game.
+ * It asks the user to enter new save progress (like a checkpoint name), and updates the selected [Savefile] using [Game.update].
+ *
+ * @return Nothing. prints the result to the console
+ */
 fun updateSaveFileInGame() {
     val game: Game? = askUserToSelectGame()
     if (game != null) {
         val savefile: Savefile? = askUserToSelectSavefile(game)
         if (savefile != null) {
-            val newAdditions = readNextLine("Enter new save progress: ")
-            if (game.update(savefile.saveId, Savefile(saveContents = newAdditions)))
+            val newContents = readNextLine("Enter new save progress: ")
+            val updatedSavefile = savefile.copy(saveContents = newContents)
+            if (game.update(savefile.saveId, updatedSavefile)) {
                 println("Save file progress has been updated!")
             } else {
-                println("Save file progress hasnt been updated!")
+                println("Save file progress hasn't been updated!")
             }
         } else {
-            print("Game id isn't valid....add some games!")
+            println("No savefile selected or savefile doesn't exist.")
+        }
+    } else {
+        println("No game selected or game doesn't exist.")
     }
 }
+
 
 /** Extra functions
  * asks a user to select a savefile for a game in a saved list
@@ -219,21 +236,18 @@ fun updateSaveFileInGame() {
  */
 
 private fun askUserToSelectGame(): Game? {
-    listSavedGames()
-    if (gameAPI.amountOfGameSaves() > 0) {
+    listGames() // Show all games, not just saved!
+    if (gameAPI.gamesAmount() > 0) {
         val game = gameAPI.gameFind(readNextInt("\nEnter the games id: "))
         if (game != null) {
-            if (game.isGameSaved) {
-                println("Game isnt saved....")
-            } else {
-                return game
-            }
+            return game
         } else {
-            println("That game id isnt here")
+            println("That game id isn't here")
         }
     }
     return null
 }
+
 private fun askUserToSelectSavefile(game: Game): Savefile? {
     return if (game.amountOfSaves()> 0) {
         print(game.listSaves())
@@ -243,6 +257,40 @@ private fun askUserToSelectSavefile(game: Game): Savefile? {
         null
     }
 }
+
+fun markGameAsSavedOrNot(){
+    val id = readNextInt("Enter the game id to mark as saved/yet to be saved:")
+    val game = gameAPI.gameFind(id)
+    if (game != null) {
+        game.isGameSaved = !game.isGameSaved
+        println("Game save status changed! Now: ${if (game.isGameSaved) "saved" else "not saved"}")
+    } else{
+        println("Game not found.")
+    }
+}
+
+/**
+ * This will add a save file to the selected game id by prompting the user for save contents
+ *
+ * This function will first ask the user to select a game, it then asks for the save files details
+ * It then creates a new [Savefile] object and then attempts to add it to the selected [Game] using [Game.addSave].
+ *
+ * @return Nothing. Prints the result to the console
+ */
+fun addSaveToGame(){
+val game: Game? = askUserToSelectGame()
+if (game != null) {
+    val saveContents = readNextLine("Enter save contents:")
+    val savefile = Savefile(saveContents = saveContents)
+    if (game.addSave(savefile)) {
+    println("Savefile added!")
+    } else {
+        println("could not add savefile")
+    }
+}
+}
+
+
 
 /*fun save() {
     try {
